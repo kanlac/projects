@@ -2,6 +2,13 @@
 
 ## Progress
 
+Day 12 | July 18
+
+1. 学会了配置 vim 将 tab 转成空格，以及在可视模式下缩进多行
+2. 学会了（在 /etc/kubernetes/manifests 目录下）修改 api-server 配置，以及在 api-server Pod 启动失败，无法通过 kubectl 访问集群时，查看 /var/log/pods 下的日志以定位问题
+3. 学会了通过 /etc/kubernetes/manifests/etcd.yaml（中的 `--listen-client-urls` 参数）查看 etcd 监听端口
+4. 完成了 3 个 killercode [scenario](https://killercoda.com/killer-shell-cka/)
+
 Day 11 | July 17
 
 1. 注册了 Killercoda，发现上面的学习资源比我想象的还多，在模拟考之前可以把 [24 个 scenario](https://killercoda.com/killer-shell-cka) 都解决一下
