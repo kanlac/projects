@@ -8,6 +8,7 @@ Day 12 | July 18
 2. 学会了（在 /etc/kubernetes/manifests 目录下）修改 api-server 配置，以及在 api-server Pod 启动失败，无法通过 kubectl 访问集群时，查看 /var/log/pods 下的日志以定位问题
 3. 学会了通过 /etc/kubernetes/manifests/etcd.yaml（中的 `--listen-client-urls` 参数）查看 etcd 监听端口
 4. 完成了 3 个 killercode [scenario](https://killercoda.com/killer-shell-cka/)
+5. 进度回顾：本周末就到就到原计划的中途点（三周）了，预习第四周完成 Scenarios，第五周完成模拟考，第六周考试
 
 Day 11 | July 17
 
