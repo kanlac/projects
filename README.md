@@ -2,18 +2,24 @@
 
 ## Progress
 
+Day 13 | July 19
+
+1. 知道了容器的配置通过 describe deployment 是看不到的；知道了 Pod 处于 Pending 状态但没有任何事件时，基本上就是调度配置的问题
+2. 学会了[将 ConfigMap 挂载为 Pod 卷](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#add-configmap-data-to-a-specific-path-in-the-volume)，意思是说 ConfigMap 中每个键值对就是一个文件的文件名和内容
+3. 完成了 10/24 个 Scenario
+
 Day 12 | July 18
 
 1. 学会了配置 vim 将 tab 转成空格，以及在可视模式下缩进多行
 2. 学会了（在 /etc/kubernetes/manifests 目录下）修改 api-server 配置，以及在 api-server Pod 启动失败，无法通过 kubectl 访问集群时，查看 /var/log/pods 下的日志以定位问题
 3. 学会了通过 /etc/kubernetes/manifests/etcd.yaml（中的 `--listen-client-urls` 参数）查看 etcd 监听端口
-4. 完成了 3 个 killercode [scenario](https://killercoda.com/killer-shell-cka/)
-5. 进度回顾：本周末就到就到原计划的中途点（三周）了，预习第四周完成 Scenarios，第五周完成模拟考，第六周考试
+4. 完成了 3 个 Killercode [Scenario](https://killercoda.com/killer-shell-cka/)
+5. 进度回顾：本周末就到就到原计划的中途点（三周）了，预习第四周完成所有 Scenario，第五周完成模拟考，第六周考试
 
 Day 11 | July 17
 
-1. 注册了 Killercoda，发现上面的学习资源比我想象的还多，在模拟考之前可以把 [24 个 scenario](https://killercoda.com/killer-shell-cka) 都解决一下
-2. 完成了 scenario：[Kubelet 配置错误问题](https://killercoda.com/killer-shell-cka/scenario/kubelet-misconfigured)，知道了 kubeadm 的参数错误可能导致 kubelet 服务异常
+1. 注册了 Killercoda，发现上面的学习资源比我想象的还多，在模拟考之前可以把 [24 个 Scenario](https://killercoda.com/killer-shell-cka) 都解决一下
+2. 完成了 Scenario：[Kubelet 配置错误问题](https://killercoda.com/killer-shell-cka/scenario/kubelet-misconfigured)，知道了 kubeadm 的参数错误可能导致 kubelet 服务异常
 
 Day 10 | July 16
 
