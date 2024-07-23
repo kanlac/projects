@@ -2,6 +2,14 @@
 
 ## Progress
 
+Day 14 | July 23
+
+1. 温习了使用 `k create` 和 `k expose` 创建 Service，两种方式差别不大，前者也能自动关联后端资源，但推荐用后者
+2. 温习了创建 Ingress 的两个知识点：创建前需要检查 `k get ingressclass`；创建后需要编写 `rewrite-target`
+3. 温习创建 Network Policy，注意 `spec.egress[].to` 和 `spec.egress[].ports` 是应该分开还是合并
+4. 复习 RBAC，最大的困难是太慢了，操作熟练度还需要提升
+5. 完成 14/24 个 Scenario
+
 Day 13 | July 19
 
 1. 知道了容器的配置通过 describe deployment 是看不到的；知道了 Pod 处于 Pending 状态但没有任何事件时，基本上就是调度配置的问题
