@@ -2,6 +2,16 @@
 
 ## Progress
 
+Day 15 | July 24
+
+1. 知道了 Killercoda 上要求操作 User 时，大概率不需要关心 User 的创建，直接用就可以了
+2. 知道了 RoleBinding 可以用 ClusterRole，赋予 SA/User 在命名空间内的相关操作权限，这样做的意义可以将 ClusterRole 在多个命名空间复用
+3. 如何实现「允许访问除了 kube-system 以外的所有命名空间的资源」这样的功能？K8s 目前是不允许的，但可以创建一个 ClusterRole 然后在各个命名空间进行 RoleBinding
+4. 知道了 User 是没有命名空间的，`k auth can-i` 指定 SA 和 User 的方式也不一样，分别是 `--as=system:serviceaccount:applications:smoke` 和 `—-as=smoke`
+5. 知道了 `k create` 没有 Pod
+6. 知道了 Pod 可以通过配置 PriorityClass 指定调度优先级，可以通过 `k get priorityclass` 查看该资源，且它是无命名空间的
+7. 完成 16/24 个 Scenario
+
 Day 14 | July 23
 
 1. 温习了使用 `k create` 和 `k expose` 创建 Service，两种方式差别不大，前者也能自动关联后端资源，但推荐用后者
