@@ -2,6 +2,13 @@
 
 ## Progress
 
+Day 16 | July 25
+
+1. 知道了编写 Pod Affinity 时要注意题目中描述的是硬限制（require）还是软限制（prefer）
+2. 知道了将节点作为拓扑键（`topologyKey`）的写法和将 Zone 作为拓扑键的写法不一样，分别是 `kubernetes.io/hostname` 和 `topology.kubernetes.io/zone`
+3. 使用 `kubeadm init` 完成集群安装
+4. 完成 20/24 个 Scenario
+
 Day 15 | July 24
 
 1. 知道了 Killercoda 上要求操作 User 时，大概率不需要关心 User 的创建，直接用就可以了
