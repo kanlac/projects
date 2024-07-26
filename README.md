@@ -2,6 +2,12 @@
 
 ## Progress
 
+Day 17 | July 26
+
+1. 温习了 kubeadm 升级、加入集群，知道了只有在还原 etcd 时才需要停止 api-server（移出 /etc/kubernetes/manifests 中的静态 Pod），只是升级是不需要的
+2. 知道了静态 Pod 是由 kubelet 直接管理的，不受 api-server 控制，但后者还是能看到它，名字会加上节点名后缀。静态 Pod 不能访问 API 对象，包括 ServiceAccount, ConfigMap, Secret 等
+3. 完成 24 个 Scenario！
+
 Day 16 | July 25
 
 1. 知道了编写 Pod Affinity 时要注意题目中描述的是硬限制（require）还是软限制（prefer）
