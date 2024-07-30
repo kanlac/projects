@@ -2,6 +2,14 @@
 
 ## Progress
 
+Day 18 | July 30
+
+1. 阅读文档《[Troubleshooting Clusters](https://kubernetes.io/docs/tasks/debug/debug-cluster/)》，知道了如果 K8s 不是基于 systemd 运行，应该从 /var/log/ 目录下查看 API Server, Scheduler, kubelet 等组件的日志
+2. 知道了 K8s 可以通过 RuntimeClass 提供多份容器运行时配置，在 Pod 的 `spec.runtimeClassName` 中指定，就可以使其跑在不同的运行时下
+3. 知道了 RuntimeClass 可以指定 Pod Overhead 开支，作为 ResourceQuota 的补充，也可以指定内存和 CPU 用量，在调度时都会考虑
+4. 复习了 Day 1-14 笔记
+5. 意识到考试前做 20-30 分钟运动非常有必要，对更好地发挥将会很有帮助
+
 Day 17 | July 26
 
 1. 温习了 kubeadm 升级、加入集群，知道了只有在还原 etcd 时才需要停止 api-server（移出 /etc/kubernetes/manifests 中的静态 Pod），只是升级是不需要的
