@@ -1,7 +1,5 @@
 # Project01: CKA Exam
 
-## Progress
-
 Day 18 | July 30
 
 1. 阅读文档《[Troubleshooting Clusters](https://kubernetes.io/docs/tasks/debug/debug-cluster/)》，知道了如果 K8s 不是基于 systemd 运行，应该从 /var/log/ 目录下查看 API Server, Scheduler, kubelet 等组件的日志
@@ -140,3 +138,20 @@ Day 1 | June 30
 5. 学习了 drain，cordon 等概念
 6. 知道了 Pod 干扰预算（pod disruption budget）是为了避免自愿干扰导致过多 Pod 被销毁，开启了 PDB 后，删除资源不应该通过 kubectl delete，而应该是更安全的遵循 PDB 的 API
 7. 知道了 drain 命令是遵循 PDB 的，所以可能会阻塞
+
+# Project00: Open Source Contributions
+
+## 04) [ko: e2e test](https://github.com/ko-build/ko/pull/1350), 06/29
+
+1. Learned how to write a e2e test
+2. Enabled ko to support the production of smaller images
+3. Made a contribution to a project with 7.3k star and closed this issue with 9 discussions
+
+## 03) [goreleaser: facilitate issue closure](https://github.com/goreleaser/goreleaser/issues/4245#issuecomment-2153648095), 06/07
+
+## 02) [godu: fix unicode display](https://github.com/viktomas/godu/pull/96), 05/22
+
+1. Enabled this disk cleanup tool to support the display of directories/files with Unicode name
+2. Learned how to handle the rendering of multi-byte characters(runes) in cell-based view
+
+## 01) [godu: cli help documentation](https://github.com/viktomas/godu/pull/95), 05/13
