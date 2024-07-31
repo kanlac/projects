@@ -1,5 +1,27 @@
 # Project01: CKA Exam
 
+Day 19 | July 31
+
+1. 阅读[远程桌面使用须知](https://itnext.io/cks-cka-ckad-changed-terminal-to-remote-desktop-157a26c1d5e)，知道了考试环境不可以直接访问终端使用的文件系统，但可以使用 Mousepad Editor，然后复制到 vim。复制前一定要设置好 vim 缩进，而考试环境是自动设置好的
+2. 阅读监考平台 [PSI Bridge 须知](https://training.linuxfoundation.org/blog/update-on-certification-exam-proctoring-migration/?utm_source=lftraining&utm_medium=twitter&utm_campaign=blog)，知道了只能用一个显示器
+3. 完成了第一次模拟考（以下分享经验）
+4. Mousepad Editor 需要设置缩进使用 2 个空格，默认是 8
+5. 过于依赖频繁查询文档会浪费很多时间，建议额外开一个 editor tab 用于存放常用的模版，避免重复查询
+6. 不管是直接用 vim 还是用 Mousepad Editor 编辑好再拷贝，效率都不太高，建议像下面这样编写 here document，每个题一份，修改完直接全选复制粘贴运行就可以了，非常高效！把它记下来
+
+```
+cat <<EOF | kubectl apply -f -
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.14.2
+EOF
+```
+
 Day 18 | July 30
 
 1. 阅读文档《[Troubleshooting Clusters](https://kubernetes.io/docs/tasks/debug/debug-cluster/)》，知道了如果 K8s 不是基于 systemd 运行，应该从 /var/log/ 目录下查看 API Server, Scheduler, kubelet 等组件的日志
