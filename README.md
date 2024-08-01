@@ -1,5 +1,16 @@
 # Project01: CKA Exam
 
+Day 20 | August 1
+
+继续分享考试 tips：
+
+1. 记住常用语法，比如节点标签、磁盘挂载和资源申请
+2. Terminal 设置：Edit → Preferences
+    1. General 面板最下面，开启自动复制
+    2. Advanced 面板，勾选 “Disable all menu access keys”，这样就可以用 readline 操作了，比如 alt f/b 来按词跳光标
+3. Pod 模版用 `k run` 获取，Deployment 模版用 `k create deploy` 获取，这样是最快的，DaemonSet 等 kubectl 没有的再查文档
+4. 浏览器设置：翻到最下面，勾选 “always show scrollbar”，搭配网页查询勾选 “highlight”，方便搜索定位
+
 Day 19 | July 31
 
 1. 阅读[远程桌面使用须知](https://itnext.io/cks-cka-ckad-changed-terminal-to-remote-desktop-157a26c1d5e)，知道了考试环境不可以直接访问终端使用的文件系统，但可以使用 Mousepad Editor，然后复制到 vim。复制前一定要设置好 vim 缩进，而考试环境是自动设置好的
@@ -7,7 +18,13 @@ Day 19 | July 31
 3. 完成了第一次模拟考（以下分享经验）
 4. Mousepad Editor 需要设置缩进使用 2 个空格，默认是 8
 5. 过于依赖频繁查询文档会浪费很多时间，建议额外开一个 editor tab 用于存放常用的模版，避免重复查询
-6. 不管是直接用 vim 还是用 Mousepad Editor 编辑好再拷贝，效率都不太高，建议像下面这样编写 here document，每个题一份，修改完直接全选复制粘贴运行就可以了，非常高效！把它记下来
+6. 远程桌面翻页不方便，浏览器可以用 page up/down，终端可以用 shift + page up/down
+7. 按大小写键会切换到全角标点符号输入，注意避免
+8. 没有尝试出有效的窗口切换快捷键，需要排列好窗口
+9. 知道了创建 NodePort Service 后可以通过 `k get ep` 查看 Endpoint，并可在相应的节点上访问这个内部 IP
+10. 知道了可以通过 `kubectl api-resources` 查看 API 资源
+11. 统计资源个数的时候，需要注意用 `k get xx --no-header`，否则会多一行
+12. 不管是直接用 vim 还是用 Mousepad Editor 编辑好再拷贝，效率都不太高，建议像下面这样编写 here document，每个题一份，修改完直接全选复制粘贴运行就可以了，非常高效！把它记下来
 
 ```
 cat <<EOF | kubectl apply -f -
@@ -49,9 +66,8 @@ Day 15 | July 24
 2. 知道了 RoleBinding 可以用 ClusterRole，赋予 SA/User 在命名空间内的相关操作权限，这样做的意义可以将 ClusterRole 在多个命名空间复用
 3. 如何实现「允许访问除了 kube-system 以外的所有命名空间的资源」这样的功能？K8s 目前是不允许的，但可以创建一个 ClusterRole 然后在各个命名空间进行 RoleBinding
 4. 知道了 User 是没有命名空间的，`k auth can-i` 指定 SA 和 User 的方式也不一样，分别是 `--as=system:serviceaccount:applications:smoke` 和 `—-as=smoke`
-5. 知道了 `k create` 没有 Pod
-6. 知道了 Pod 可以通过配置 PriorityClass 指定调度优先级，可以通过 `k get priorityclass` 查看该资源，且它是无命名空间的
-7. 完成 16/24 个 Scenario
+5. 知道了 Pod 可以通过配置 PriorityClass 指定调度优先级，可以通过 `k get priorityclass` 查看该资源，且它是无命名空间的
+6. 完成 16/24 个 Scenario
 
 Day 14 | July 23
 
