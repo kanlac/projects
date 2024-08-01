@@ -10,6 +10,11 @@ Day 20 | August 1
     2. Advanced 面板，勾选 “Disable all menu access keys”，这样就可以用 readline 操作了，比如 alt f/b 来按词跳光标
 3. Pod 模版用 `k run` 获取，Deployment 模版用 `k create deploy` 获取，这样是最快的，DaemonSet 等 kubectl 没有的再查文档
 4. 浏览器设置：翻到最下面，勾选 “always show scrollbar”，搭配网页查询勾选 “highlight”，方便搜索定位
+5. 知道了 Service CIDR 要在 API Server manifest 中查看
+6. 知道了在节点 /etc/cni/net.d 目录下可以查看使用的 CNI plugin
+7. 知道了考试环境下的 etcd 操作用 etcdctl 而不是更新的 etcdutl，不用关心 deprecated command 提示
+8. [etcd 备份文档](https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/#backing-up-an-etcd-cluster)中提供了 3 种方法，如果直接用第一种 built-in snapshot，命令看起来能执行，但实际上不对，需要加 option 提供 ca 证书，而具体连接信息可以通过 API Server manifest 查看
+9. 没有外置摄像头，笔记本屏幕太小，但又不允许使用扩展屏，怎么办？在 Reddit 得知一个 mac 小工具 [BetterDisplay](https://github.com/waydabber/BetterDisplay)，可以关闭自带屏幕，完美符合考试需要！
 
 Day 19 | July 31
 
