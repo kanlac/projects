@@ -1,5 +1,12 @@
 # Project01: CKA Exam
 
+Day 21 | August 4
+
+1. 计时完成一道优先级调度 Pod 用时 5 分钟，完成一道 NetworkPolicy 用时 8 分钟，决定将 8 分钟作为第一轮每道题用时上限
+2. RBAC 失误，需要做 ClusterRoleBinding 的时候做成了 RoleBinding，这类题做完后需要标记，如果有空余时间再用 `k auth can-i` 验证
+3. 4 分钟完成 Anti-Affinity；6 分钟完成 DaemonSet with HostPath；3 分钟完成 debug multiple container Deployment
+4. 15 分钟完成 Ingress Create，查 ingress class name 字段找了很久，查文档没查到不能着急，不要翻页找，调整关键词，高亮滚动条
+
 Day 20 | August 1
 
 继续分享考试 tips：
