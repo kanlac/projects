@@ -1,5 +1,15 @@
 # Project01: CKA Exam
 
+Day 22 | August 6
+
+1. 完成第二次模拟考
+2. 知道了当问你要用什么命令的时候，不能用 alias，虽然环境配了 `k=kubectl`，但答案中用 `k` 会判定错误
+3. 知道了将 /etc/kubernetes/manifests 下的文件从 xx.yaml 重命名为 xx.yaml.bak 并不会导致静态 Pod 消失，得移出这个目录才行
+4. controlplane node 上可能有 taint，所以当让你调度 Pod 到 worker 节点，这个是自动的
+5. 知道了 `k events` 不是唯一的查看事件的方式，还有 `k get events`，两者可用的选项也不一样，前者可以用 `--type` `--for` 等，后者可以用 `--sort-by`
+6. 知道了 `k delete` 是有 `--now` 选项的，等同 `--grace-period=1`
+7. 知道了 kubelet 起不来，错误提示缺少 kubelet config.yaml 文件，是因为还没有加入集群，加入就好了
+
 Day 21 | August 4
 
 1. 计时完成一道优先级调度 Pod 用时 5 分钟，完成一道 NetworkPolicy 用时 8 分钟，决定将 8 分钟作为第一轮每道题用时上限
