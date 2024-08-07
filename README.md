@@ -1,5 +1,10 @@
 # Project01: CKA Exam
 
+Day 23 | August 7
+
+1. 学会了使用 kubeadm certs 命令查看证书过期日期和更新证书
+2. 收获 etcd 快照恢复经验：1）不需要 drain node；2）执行恢复前要确保 API Server 容器都停止了，可能要等好几分钟，用 `watch crictl ps` 命令观察；3）虽然文档没有提及，但其实和备份一样也需要提供证书等参数；4）需要修改 etcd.yaml 中 hostPath 挂载目录，注意不是命令参数
+
 Day 22 | August 6
 
 1. 完成第二次模拟考
