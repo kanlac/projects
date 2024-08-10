@@ -1,5 +1,17 @@
 # Project01: CKA Exam
 
+Day 26 | August 10
+
+1. 顺利完成考试！题目比模拟考简单，时间很宽裕，做完还剩半小时，又检查了一遍，有信心冲满分 ;D
+2. 可以配合 Better Display 使用外接屏幕，只是整个过程连接不能断开，否则 PSI 会退出要重新开始检测，所以需要确保视频线连接稳定且不要太短，能够让你端着笔记本扫视四周。使用 24 寸显示器真的让考试轻松很多！
+3. 不能佩戴手表，可以看远程桌面里的时间（有时差）
+
+Day 25 | August 9
+
+1. 6 分钟完成 Scenario "RBAC User Permissions"
+2. 9 分钟完成 "Multi Containers and Pod shared Volume"，已经尽力了
+3. 验证发现 `k delete --force --grace-period=0` 的确比 `k delete --now` 更快，所以 `export now="--force --grace-period 0"` 还是有必要的
+
 Day 24 | August 8
 
 1. 阅读考试注意事项，知道了有可能不让戴手表，要做好不能使用计时器的准备，想别的办法控制时间，不要浪费时间在不熟悉的题目上
@@ -38,9 +50,9 @@ Day 20 | August 1
 1. 记住常用语法，比如节点标签、磁盘挂载和资源申请
 2. Terminal 设置：Edit → Preferences
     1. General 面板最下面，开启自动复制
-    2. Advanced 面板，勾选 “Disable all menu access keys”，这样就可以用 readline 操作了，比如 alt f/b 来按词跳光标
+    2. Advanced 面板，勾选 "Disable all menu access keys"，这样就可以用 readline 操作了，比如 alt f/b 来按词跳光标
 3. Pod 模版用 `k run` 获取，Deployment 模版用 `k create deploy` 获取，这样是最快的，DaemonSet 等 kubectl 没有的再查文档
-4. 浏览器设置：翻到最下面，勾选 “always show scrollbar”，搭配网页查询勾选 “highlight”，方便搜索定位
+4. 浏览器设置：翻到最下面，勾选 "always show scrollbar"，搭配网页查询勾选 "highlight"，方便搜索定位
 5. 知道了 Service CIDR 要在 API Server manifest 中查看
 6. 知道了在节点 /etc/cni/net.d 目录下可以查看使用的 CNI plugin
 7. 知道了考试环境下的 etcd 操作用 etcdctl 而不是更新的 etcdutl，不用关心 deprecated command 提示
